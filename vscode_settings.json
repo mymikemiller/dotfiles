@@ -14,5 +14,6 @@
     "git.autofetch": true,
     "dart.debugExternalLibraries": false,
     "dart.debugSdkLibraries": false,
-    "debug.internalConsoleOptions": "openOnSessionStart"
+    "debug.internalConsoleOptions": "openOnSessionStart",
+    "terminal.integrated.shell.osx": "/bin/zsh"
 }
