@@ -102,4 +102,6 @@ source $ZSH/oh-my-zsh.sh
 
 # Functions
 fpath=($fpath ~/.zfunc)
+# Autoload all functions in the .zfunc folder so they don't slow things down 
+# until the first time they're used
 autoload -Uz ~/.zfunc/*(:t)
