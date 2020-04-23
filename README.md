@@ -5,7 +5,7 @@ Config files for my machine
 ### Prerequisites
 Install required zsh plugins
 ```
-// send, to use `send 'commit message'` to 
+// send, to use `send 'commit message'` to commit and push current branch to github
 git clone git@github.com:robertzk/send.zsh.git ~/.oh-my-zsh/custom/plugins/send
 // git-it-on, to use `gitit compare` to open PRs on the current branch
 git clone https://github.com/peterhurford/git-it-on.zsh ~/.oh-my-zsh/custom/plugins/git-it-on
