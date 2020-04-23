@@ -68,7 +68,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git vscode)
+plugins=(git vscode send git-it-on)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -97,3 +97,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+#
+# Note: to edit aliases: code $ZSH_CUSTOM/aliases.zsh
+
+# Functions
+fpath=($fpath ~/.zfunc)
+autoload -Uz ~/.zfunc/*(:t)

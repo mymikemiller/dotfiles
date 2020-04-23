@@ -1,0 +1,1 @@
+alias gh='gitit compare'
