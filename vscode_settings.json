@@ -1,5 +1,5 @@
 {
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 2,
     "editor.tabSize": 4,
     "explorer.confirmDragAndDrop": false,
     "git.enableSmartCommit": true,
@@ -12,8 +12,27 @@
     ],
     "diffEditor.renderSideBySide": true,
     "git.autofetch": true,
-    "dart.debugExternalLibraries": false,
-    "dart.debugSdkLibraries": false,
+    "dart.debugExternalLibraries": true,
+    "dart.debugSdkLibraries": true,
     "debug.internalConsoleOptions": "openOnSessionStart",
-    "terminal.integrated.shell.osx": "/bin/zsh"
+    "terminal.integrated.shell.osx": "/bin/zsh",
+    "files.insertFinalNewline": true,
+    "multiCommand.commands": [
+        {
+            "command": "multiCommand.saveAndRewrapComment",
+            "sequence": [
+                "rewrap.rewrapComment",
+                "workbench.action.files.save",
+            ]
+        },
+        {
+            "command": "multiCommand.clearTerminalAndDebug",
+            "sequence": [
+                "workbench.action.terminal.clear",
+                "workbench.action.debug.restart",
+            ]
+        },
+    ],
+    "code-runner.runInTerminal": true,
+    "code-runner.clearPreviousOutput": true
 }

@@ -1,11 +1,6 @@
 // Place your key bindings in this file to overwrite the defaults
 [
     {
-        "key": "cmd+r",
-        "command": "workbench.action.debug.start",
-        "when": "!inDebugMode"
-    },
-    {
         "key": "f5",
         "command": "-workbench.action.debug.start",
         "when": "!inDebugMode"
@@ -46,11 +41,6 @@
         "command": "git.openChange"
     },
     {
-        "key": "cmd+r",
-        "command": "workbench.action.debug.restart",
-        "when": "inDebugMode"
-    },
-    {
         "key": "shift+cmd+f5",
         "command": "-workbench.action.debug.restart",
         "when": "inDebugMode"
@@ -72,5 +62,14 @@
         "key": "cmd+r",
         "command": "-workbench.action.reloadWindow",
         "when": "isDevelopment"
-    }
+    },
+    {
+        "key": "cmd+s",
+        "command": "multiCommand.saveAndRewrapComment",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+r",
+        "command": "multiCommand.clearTerminalAndDebug"
+    },
 ]
