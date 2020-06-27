@@ -1,13 +1,27 @@
 # dotfiles
-Config files for my machine
+Config files and setup for my machine
 
 ## Setup
 ### Prerequisites
-Install required zsh plugins
+Install zsh and set as default terminal:
 ```
-// send, to use `send 'commit message'` to commit and push current branch to github
+brew install zsh
+chsh -s /bin/zsh
+```
+
+Install oh-my-zsh:
+```
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+Install required zsh plugins:
+
+send, to use `send 'commit message'` to commit and push current branch to github
+```
 git clone git@github.com:robertzk/send.zsh.git ~/.oh-my-zsh/custom/plugins/send
-// git-it-on, to use `gitit compare` to open PRs on the current branch
+```
+git-it-on, to use `gitit compare` to open PRs on the current branch
+```
 git clone https://github.com/peterhurford/git-it-on.zsh ~/.oh-my-zsh/custom/plugins/git-it-on
 ```
 

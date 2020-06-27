@@ -31,7 +31,7 @@
                 "workbench.action.terminal.clear",
                 "workbench.action.debug.restart",
             ]
-        },
+        }
     ],
     "code-runner.runInTerminal": true,
     "code-runner.clearPreviousOutput": true
