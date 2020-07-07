@@ -21,3 +21,11 @@ ln -sf $PWD/aliases.zsh "$HOME/.oh-my-zsh/custom/aliases.zsh"
 ln -sf $PWD/zsh_functions "$HOME/.zfunc"
 ln -sf $PWD/gitignore_global "$HOME/.config/git/ignore"
 ```
+
+## Usage
+### Open in VLC
+This automator script allows you to right click on a folder containing video or
+audio files, click Services, and click Open in VLC to append the files to VLC's
+playlist and play them. I don't know the command for cleaning the current
+playlist before opening one, instead of appending it. This script comes from
+https://apple.stackexchange.com/a/144324/381792
