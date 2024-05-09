@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+# export PATH=$HOME/bin:/usr/a/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/mikem/.oh-my-zsh"
@@ -42,7 +42,11 @@ DISABLE_UPDATE_PROMPT="true"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
+# ENABLE_CORRECTION="true"
+
+# disable auto correct
+unsetopt correct_all
+unsetopt correct
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 COMPLETION_WAITING_DOTS="true"
@@ -73,6 +77,19 @@ plugins=(git vscode send git-it-on)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+
+# Environment Variables
+# EscaPAID
+# export DATABASE_URL=https://artwithme-x.firebaseio.com/
+# export STRIPE_SECRET_KEY=
+# export STRIPE_TEST_SECRET_KEY=
+# export FIREBASE_PRIVATE_KEY=
+# export FIREBASE_CLIENT_EMAIL=firebase-adminsdk-7ecsw@artwithme-x.iam.gserviceaccount.com
+# export ARTWITHME_DATABASE_URL=https://artwithme-x.firebaseio.com/
+# export ARTWITHME_STRIPE_SECRET_KEY=
+# export ARTWITHME_STRIPE_TEST_SECRET_KEY=
+# export ARTWITHME_FIREBASE_PRIVATE_KEY=
+# export ARTWITHME_FIREBASE_CLIENT_EMAIL=firebase-adminsdk-7ecsw@artwithme-x.iam.gserviceaccount.com
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -105,3 +122,28 @@ fpath=($fpath ~/.zfunc)
 # Autoload all functions in the .zfunc folder so they don't slow things down 
 # until the first time they're used
 autoload -Uz ~/.zfunc/*(:t)
+
+# Homebrew
+export PATH=$PATH:/usr/local/opt/
+
+# Flutter (The flutter path must come before the dart path so "which flutter dart" reports both dart and flutter from the same place, guaranteeing compatible versions. See https://flutter.dev/docs/get-started/install/macos#update-your-path). <-- this applies when I start doing Flutter dev again. Right now all I'm using is dart.
+#export PATH="/Users/mikem/development/flutter/bin:$PATH"
+#export PATH="$PATH":"$HOME/.pub-cache/bin"
+export PATH=$PATH:/usr/local/bin/dart
+export PATH=$PATH:/Users/mikem/Library/Android/sdk/tools/bin/sdkmanager
+
+# CMake
+export PATH=$PATH:/Applications/CMake.app/Contents/binexport PATH="/usr/local/sbin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
+# export VOLTA_HOME="$HOME/.volta"
+# export PATH="$VOLTA_HOME/bin:$PATH"
+
+export DFX_MOC_PATH="$HOME/.cache/mocv/versions/current/moc"
+PATH="$HOME/.cache/mocv/versions/current:$PATH"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"

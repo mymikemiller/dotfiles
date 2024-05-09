@@ -1,6 +1,6 @@
 {
-    "window.zoomLevel": 2,
-    "editor.tabSize": 4,
+    "window.zoomLevel": 3,
+    "editor.tabSize": 2,
     "explorer.confirmDragAndDrop": false,
     "git.enableSmartCommit": true,
     "dart.flutterSdkPath": "/Users/mikem/dev/flutter",
@@ -34,5 +34,30 @@
         }
     ],
     "code-runner.runInTerminal": true,
-    "code-runner.clearPreviousOutput": true
+    "code-runner.clearPreviousOutput": true,
+    "debug.javascript.autoAttachFilter": "onlyWithFlag",
+    "rust-client.updateOnStartup": true,
+    "rust.all_features": true,
+    "debug.allowBreakpointsEverywhere": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "dart.showSkippedTests": false,
+    "redhat.telemetry.enabled": false,
+    "security.workspace.trust.untrustedFiles": "newWindow",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "editor.accessibilitySupport": "off",
+    "dart.sdkPath": "/usr/local/bin/dart",
+    "remote.SSH.defaultExtensions": [
+        "gitpod.gitpod-remote-ssh"
+    ],
+    "remote.SSH.configFile": "/var/folders/2n/vn59_vz152vg107rrs53ympc0000gn/T/gitpod_ssh_config-1898-npTQsmrxr7wO",
+    "files.autoSave": "afterDelay",
+    "xml.format.experimental": true,
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "svelte.enable-ts-plugin": true,
+    "githubPullRequests.pullBranch": "never",
+    "dart.checkForSdkUpdates": false,
+    "githubPullRequests.pushBranch": "always"
 }

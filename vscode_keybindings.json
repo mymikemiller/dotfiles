@@ -72,4 +72,18 @@
         "key": "cmd+r",
         "command": "multiCommand.clearTerminalAndDebug"
     },
+    {
+        "key": "shift+cmd+r",
+        "command": "-extension.scriptcsRunner",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+cmd+r",
+        "command": "-rerunSearchEditorSearch",
+        "when": "inSearchEditor"
+    },
+    {
+        "key": "shift+cmd+r",
+        "command": "dart.runAllFailedTestsWithoutDebugging"
+    },
 ]
